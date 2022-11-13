@@ -18,7 +18,7 @@ print(calculate_hypotenuse(12.0,12.0))
 
 print("\n#-----------------------------------------------------#\n")
 
-# Read foobar.txt and print each line with a commad "," appended
+# Read foobar.txt and print each line with a comma "," appended
 file = open('foobar.txt', 'r')
 for line in file:
     lineWithoutNewLine = line.replace("\n", "")
@@ -31,9 +31,9 @@ print("\n#-----------------------------------------------------#\n")
 from fibonacci import fibonacci
 
 # Function to calculate the fibonacci sequence up to the nth number and display the info
-# in a user friendly manner
+# in a user-friendly manner
 def fibonacci_info(n):
-    #Prints fibonacci sequence information unto the nth number.
+    #Prints fibonacci sequence information up to the nth number.
 
     #Parameters:
     #    n (int):The number of up to which to calculate the fibonacci sequence.
@@ -50,7 +50,7 @@ def fibonacci_info(n):
 
 fibonacci_info(100)
 
-print("\n#-------------------------------------------#\n")
+print("\n#-----------------------------------------------------#\n")
 
 import sys
 
@@ -59,7 +59,7 @@ def sys_out():
     #Prints the two user-provided arguments.
 
     #Parameters:
-    #    None.
+    #    None. (Parameters are indirectly provided when the main.py file is run from the terminal/command line)
 
     #Returns:
     #    None.
@@ -75,10 +75,10 @@ def sys_out():
 
 sys_out()
 
-print("\n#-------------------------------------------#\n")
+print("\n#-----------------------------------------------------#\n")
 
-# Function to take user input and decrement using a while loop until the input becomes
-# <= -1
+# Function to take user input and decrement using a while loop until the input
+# becomes <= -1
 def user_input_decrement(n):
     #Prints decremented user input.
 
