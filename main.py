@@ -79,21 +79,26 @@ print("\n#-----------------------------------------------------#\n")
 
 # Function to take user input and decrement using a while loop until the input
 # becomes <= -1
-def user_input_decrement(n):
+def user_input_decrement():
     #Prints decremented user input.
 
     #Parameters:
-    #    n (int):The user input to decrement.
+    #    n (int):The user input to decrement. (Provided by user at run-time)
 
     #Returns:
     #    None. 
 
-    # Make a copy of the user input n since it's generally not a good
-    # practise to modify function inputs
-    n_copy = n
-    
-    while n_copy >= -1:
-        n_copy -= 5
-        print(n_copy)
+    try:
+        n = int(input('Enter a number: '))   
 
-user_input_decrement(100)
+        # Make a copy of the user input n since it's generally not a good
+        # practise to modify function inputs
+        n_copy = n
+        
+        while n_copy >= -1:
+            n_copy -= 5
+            print(n_copy)
+    except:
+        print("ERROR: Please type a number")
+
+user_input_decrement()
